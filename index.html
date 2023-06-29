@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description"
+        content="Привет, папа! Сделал небольшой для тебя подарок. Этим я хочу сказать, что мы тебя очень сильно любим и дорожим! Ты самый лучший отец!" />
+    <title>Хлебников Валерий Семенович</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div>
+                    <h1>Привет, Пап!</h1>
+                    <p>
+                        Уверен, что ты хоть единожды думал,<br> кем ты мог бы быть <br> <span> в этой жизни? </span>
+                    </p>
+                </div>
+                <p>Если да. Свапай вниз!</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="король отец.png" alt="король">
+                <div class="descript fade-in">
+                    <p class="one">Да! Ты бы был самым лучшим правителем какой нибудь страны!</p>
+                    <p class="two">И мы очень рады, что ты лидер нашей семьи!</p>
+                </div>
+
+
+            </div>
+            <div class="swiper-slide"><img src="космонавт.png" alt="космос">
+                <div class="descript fade-in">
+                    <p class="one">Еще бы мог колонизировать Луну.</p>
+                    <p class="two">Но мы бы тебя так далеко не отпустили...</p>
+                </div>
+            </div>
+            <div class="swiper-slide"><img src="космонавт.png" alt="космос">
+                <div class="descript fade-in">
+                    <p class="one">Еще бы мог колонизировать Луну.</p>
+                    <p class="two">Но мы бы тебя так далеко не отпустили...</p>
+                </div>
+            </div>
+            <div class="swiper-slide"><img src="король отец.png" alt="король">
+                <div class="descript fade-in">
+                    <p class="one">Да! Ты бы был самым лучшим правителем какой нибудь страны!</p>
+                    <p class="two">И мы очень рады, что ты лидер нашей семьи!</p>
+                </div>
+            </div>
+            <div class="swiper-slide"><img src="король отец.png" alt="король">
+                <div class="descript fade-in">
+                    <p class="one">Да! Ты бы был самым лучшим правителем какой нибудь страны!</p>
+                    <p class="two">И мы очень рады, что ты лидер нашей семьи!</p>
+                </div>
+            </div>
+            <div class="swiper-slide"><img src="король отец.png" alt="король">
+                <div class="descript fade-in">
+                    <p class="one">Да! Ты бы был самым лучшим правителем какой нибудь страны!</p>
+                    <p class="two">И мы очень рады, что ты лидер нашей семьи!</p>
+                </div>
+            </div>
+            <div class="swiper-slide"><img src="король отец.png" alt="король">
+                <div class="descript fade-in">
+                    <p class="one">Да! Ты бы был самым лучшим правителем какой нибудь страны!</p>
+                    <p class="two">И мы очень рады, что ты лидер нашей семьи!</p>
+                </div>
+            </div>
+            <div class="swiper-slide"><img src="король отец.png" alt="король">
+                <div class="descript fade-in">
+                    <p class="one">Да! Ты бы был самым лучшим правителем какой нибудь страны!</p>
+                    <p class="two">И мы очень рады, что ты лидер нашей семьи!</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            direction: "vertical",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            on: {
+                slideChangeTransitionStart: function () {
+                    var currentSlide = this.slides[this.activeIndex];
+                    var fadeInElements = currentSlide.querySelectorAll(".fade-in");
+                    fadeInElements.forEach(function (element) {
+                        element.style.opacity = 0;
+                        element.addEventListener("transitionend", function () {
+                            element.style.opacity = 1;
+                        });
+                    });
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
