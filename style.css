@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
 html,
     body {
       position: relative;
@@ -5,12 +6,14 @@ html,
     }
 
     body {
-      background: #eee;
+      background: #000000;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       font-size: 14px;
       color: #000;
       margin: 0;
       padding: 0;
+      font-family: 'Comfortaa', cursive;
+      color: #fff;
     }
 
     .swiper {
@@ -21,12 +24,16 @@ html,
     .swiper-slide {
       text-align: center;
       font-size: 18px;
-      background: #fff;
+      background: #ffffff;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      background-image: url("photo_2023-06-29_14-54-44.jpg");
+      background-position: center, top;
+      background-size: 100vh;
     }
+
 
     .swiper-slide img {
       display: block;
@@ -39,13 +46,17 @@ html,
         position: absolute;
         top: 60%;
         background-color:#00000080;
-        color: #fff;
         width: 80%;
+        border-radius: 10%;
+    }
+
+    .winner .descript {
+        top: 10%;
     }
 
     .fade-in {
         opacity: 0;
-        animation: fadeIn 1s ease-in-out forwards;
+        animation: fadeIn 3s ease-in-out forwards;
       }
       
       @keyframes fadeIn {
@@ -56,4 +67,9 @@ html,
           opacity: 1;
         }
       }
-
+.one-title {
+    background-color: #0000007c;
+    margin: 10%;
+    padding: 1rem;
+    border-radius: 10%;
+}
